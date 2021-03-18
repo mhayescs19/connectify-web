@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Individual Post</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/individual-post.css') }}">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+        *
+        {
+            font-size: 14px;
+            font-family: Rockwell;
+        }
+
+        body {
+
+            min-height: 100vh;
+            background: #d0d0d0;
+        }
+        /* Div for entire content area */
+        .container {
+            position: relative;
+        }
+
+        .container .center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container .center .content {
+            padding: 10px;
+            min-width: 300px;
+            max-width: 300px;
+            background: #f8f8f8;
+            border-radius: 10px;
+        }
+
+        .container .center .content .postImage img.mainPhoto {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="center">
+        <div class="content">
+            <div class="postImage">
+                <img class="mainPhoto" src="https://i.pinimg.com/originals/bd/4c/c9/bd4cc98b5bf34081b4ac4ae95038c5f1.jpg">
+            </div>
+            <div class="postInfo">
+                <p class="user">@richard</p>
+                <p class="rating">Rating: ☆☆☆☆☆</p>
+                <p class="location">Madison Square Park</p>
+                <p class="time">10:23</p>
+                <p class="hours">Busy: moderate</p>
+                <p class="address">Address: 11 Madison Ave, New York, NY 10010</p>
+            </div>
+            <div class="addressImage">
+                <img class="addressPhoto">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -4,8 +4,15 @@ from flask import render_template
 
 app = Flask(__name__)
 
-@app.route('/')
 @app.route('/landing_page', methods=["GET", "POST"])
-def home_page():
+def landing_page():
+    return render_template("Landing_Page.html")
 
-    return render_template("Home_Page.html")
+@app.route('/')
+def home_page():
+    return render_template("index.html")
+
+@app.route('/timeline/post')
+def individual_post():
+
+    return render_template("individualPost.html")
