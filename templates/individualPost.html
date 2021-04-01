@@ -41,9 +41,14 @@
             width: 300px;
             height: auto;
         }
+        .container .center .content .addressImage img.addressPhoto {
+            width: 300px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
+{% include 'nav.html' %}
 <div class="container">
     <div class="center">
         <div class="content">
@@ -55,11 +60,11 @@
                 <p class="rating">Rating: ☆☆☆☆☆</p>
                 <p class="location">Madison Square Park</p>
                 <p class="time">10:23</p>
-                <p class="hours">Busy: moderate</p>
+                <p class="hours">Congestion: Moderate</p>
                 <p class="address">Address: 11 Madison Ave, New York, NY 10010</p>
             </div>
             <div class="addressImage">
-                <img class="addressPhoto">
+                <img class="addressPhoto" src="https://miro.medium.com/max/1400/1*SxKI1ic3_ug-Lxf0__nmPg.jpeg">
             </div>
         </div>
     </div>
