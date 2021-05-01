@@ -9,6 +9,9 @@ app = Flask(__name__)
 def landing_page():
     return render_template("landing_page.html")
 
+@app.route('/signin', methods=["GET", "POST"])
+def signin():
+    return render_template("signin.html")
 
 @app.route('/timeline/post')
 def individual_post():
